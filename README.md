@@ -1,4 +1,4 @@
-# Bitácora · LLEY-IA BITACORA
+# Bitácora · PWA — Cemenquin S.A. de C.V.
 
 App de campo para registrar anotaciones y fotos, instalable en iPhone sin App Store.
 
