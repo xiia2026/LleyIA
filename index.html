@@ -223,7 +223,7 @@
   <div class="filters" id="filters">
     <div class="chip on" data-f="all">Todos</div>
     <div class="chip" data-f="Entrega">📦 Entrega</div>
-    <div class="chip" data-f="Ruta">🚛 Ruta</div>
+    <div class="chip" data-f="Logistica">🚛 Logistica</div>
     <div class="chip" data-f="Incidente">⚠️ Incidente</div>
     <div class="chip" data-f="Mantenimiento">🔧 Mant.</div>
     <div class="chip" data-f="General">📋 General</div>
@@ -259,7 +259,7 @@
       <label class="lbl">Categoría</label>
       <div class="cat-grid">
         <button class="cat-btn on" data-c="Entrega"><span class="cat-emo">📦</span>Entrega</button>
-        <button class="cat-btn" data-c="Ruta"><span class="cat-emo">🚛</span>Ruta</button>
+        <button class="cat-btn" data-c="Logistica"><span class="cat-emo">🚛</span>Logistica</button>
         <button class="cat-btn" data-c="Incidente"><span class="cat-emo">⚠️</span>Incidente</button>
         <button class="cat-btn" data-c="Mantenimiento"><span class="cat-emo">🔧</span>Mantto.</button>
         <button class="cat-btn" data-c="General"><span class="cat-emo">📋</span>General</button>
@@ -382,7 +382,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
 function toast(msg,ms=2400){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),ms)}
 function fmtFull(iso){const d=new Date(iso);return d.toLocaleDateString('es-MX',{weekday:'long',day:'2-digit',month:'long',year:'numeric'})+' · '+d.toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'})}
 function fmtShort(iso){const d=new Date(iso);return d.toLocaleDateString('es-MX',{day:'2-digit',month:'short',year:'numeric'})}
-const EMOJIS={Entrega:'📦',Ruta:'🚛',Incidente:'⚠️',Mantenimiento:'🔧',General:'📋',Otro:'➕'};
+const EMOJIS={Entrega:'📦',Logistica:'🚛',Incidente:'⚠️',Mantenimiento:'🔧',General:'📋',Otro:'➕'};
 const emo=c=>EMOJIS[c]||'📋';
 
 // ══ PANELS ══
